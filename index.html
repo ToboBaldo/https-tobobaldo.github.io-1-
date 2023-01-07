@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>tic-tac-toe</title>
+        <link rel="stylesheet" href="./game_style.css">
+    </head>
+
+    <body>
+        <div id="title">Tic Tac Toe Game</div>
+
+        <div class="outer">
+            <div class="middle">
+                <div id="turn">
+                    <div class="x turn_on" id="x_turn">x's turn</div>
+                    <div class="o turn_off" id="o_turn">o's turn</div>
+                </div>
+        
+                <div class="inner">
+                    <div class="row1">
+                        <button class="x" id='top-left' position="1"></button>
+                        <button class="x" id='top' position="2"></button>
+                        <button class="x" id='top-right' position="3"></button>
+                    </div>
+                    <div class="row2">
+                        <button class="x" id='left' position="4"></button>
+                        <button class="x" id='center' position="5"></button>
+                        <button class="x" id='right' position="6"></button>
+                    </div>
+                    <div class="row3">
+                        <button class="x" id='bottom-left' position="7"></button>
+                        <button class="x" id='bottom' position="8"></button>
+                        <button class="x" id='bottom-right' position="9"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="game_over">
+            <div id="result">X WINS!</div>
+            <div id="restart_button">
+                <div id="helper">
+                    <img src="./reload.ico" alt="icon">
+                </div>
+                <button></button>
+            </div>
+        </div>
+
+        <script src="./back_end.js"></script>
+    </body>
+</html>
